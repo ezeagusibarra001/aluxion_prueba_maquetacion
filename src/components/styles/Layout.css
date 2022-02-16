@@ -1,0 +1,29 @@
+.app {
+    height: 100vh;
+    background-color: white;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: back_app_close;
+  }
+  .open {
+    background-color: black;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: back_app;
+  }
+  @keyframes back_app {
+      0%{
+        opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+    }
+    @keyframes back_app_close {
+      0%{
+        opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+    }
