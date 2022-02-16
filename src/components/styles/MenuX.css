@@ -1,0 +1,10 @@
+.grilla_menu_x {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(70px, auto);
+}
+.footer{
+    grid-column: 2/6;
+    display: flex;
+}

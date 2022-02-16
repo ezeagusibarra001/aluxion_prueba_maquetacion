@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(70px, auto);
+}
+.box_left {
+  grid-column: 2/6;
+  grid-row: 2;
+  font-family: "Roboto", sans-serif;
+}
+.box_right{
+    grid-column: 8/11;
+  grid-row: 2;
+  font-family: "Roboto", sans-serif;
+}
+.p_text {
+  color: gray;
+  font-weight: 500;
+  font-size: 14px;
+}
+.h2_text {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.p_description {
+  color: gray;
+  font-weight: 500;
+  font-size: 14px;
+}
+.button_detail {
+  border: 0;
+  background-color: black;
+  color: white;
+  height: 40px;
+  font-weight: bold;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.imagen{
+    width: 400px;
+}
