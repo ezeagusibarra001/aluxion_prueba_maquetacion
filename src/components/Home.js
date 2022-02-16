@@ -5,10 +5,13 @@ import MenuX from "./helpComponents/MenuX";
 import { useHome } from "../context/useContext";
 function Home() {
   const { productos, id } = useHome();
+  const onWheel = (e) => {
+    console.log(e)
+  }
   return (
     <Layout>
       {productos.filter(p => p.id === id).map((p) => (
-        <div className="grilla" key={p.id}>
+        <div className="grilla" key={p.id} onWheel={(e)=>onWheel(e)}>
           <div className="box_left">
             <p className="p_text">{p.designer}</p>
             <h2 className="h2_text">{p.name}</h2>

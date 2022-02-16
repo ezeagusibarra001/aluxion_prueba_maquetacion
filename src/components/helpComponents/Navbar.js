@@ -22,7 +22,7 @@ function Navbar() {
         <p className="text_p open_text">mater</p>
 
         <div id="hamburger">
-        <Link to="/home">
+        <Link to="/">
             <button className="open">
               <span className="top-line open_span"></span>
               <span className="middle-line open_span"></span>
@@ -32,8 +32,7 @@ function Navbar() {
         </div>
       </div>
     );
-  }
-  if (window.location.href.includes("home")) {
+  }else{
     return (
       <div className="wrapper">
         <p className="text_p">mater</p>

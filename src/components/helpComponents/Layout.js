@@ -9,8 +9,7 @@ function Layout(props) {
         {props.children}
       </div>
     );
-  }
-  if (window.location.href.includes("home")) {
+  }else{
     return (
       <div id="web_app" className="app">
         <Navbar />

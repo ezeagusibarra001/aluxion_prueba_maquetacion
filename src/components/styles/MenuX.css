@@ -31,6 +31,10 @@
   height: fit-content;
 }
 .uno:hover {
+  border-top: 2px solid rgb(145, 145, 145);
+  cursor: pointer;
+}
+.underline{
   border-top: 2px solid black;
   cursor: pointer;
 }

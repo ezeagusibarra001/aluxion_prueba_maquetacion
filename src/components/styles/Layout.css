@@ -13,17 +13,21 @@
 }
 @keyframes back_app {
   0% {
-    background-color: white;
+    background-color: black;
+    transform: translate(100vw, 0);
   }
   100% {
     background-color: black;
+    transform: translate(0, 0);
   }
 }
 @keyframes back_app_close {
   0% {
-    background-color: black;
+    background-color: white;
+    transform: translate(-100vw, 0);
   }
   100% {
     background-color: white;
+    transform: translate(0, 0);
   }
 }
