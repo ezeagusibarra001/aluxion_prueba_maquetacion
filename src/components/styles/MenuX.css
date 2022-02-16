@@ -1,10 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 .grilla_menu_x {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(70px, auto);
 }
-.footer{
-    grid-column: 2/6;
-    display: flex;
+.footer {
+  grid-column: 2/7;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.number {
+  margin: 0;
+  color: grey;
+}
+.text_title {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+.keep_down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.uno {
+  width: 200px;
+  padding: 0px 20px;
+  height: fit-content;
+}
+.uno:hover {
+  border-top: 2px solid black;
+  cursor: pointer;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
 function Navbar() {
-  const open = () => {
+  /*const open = () => {
     var nav = document.querySelector("#hamburger button");
     var app = document.querySelector("#web_app");
     var top = document.querySelector(".top-line");
@@ -15,7 +15,7 @@ function Navbar() {
     middle.classList.toggle("open_span");
     bottom.classList.toggle("open_span");
     text.classList.toggle("open_text");
-  };
+  };*/
   if (window.location.href.includes("menu")) {
     return (
       <div className="wrapper">
