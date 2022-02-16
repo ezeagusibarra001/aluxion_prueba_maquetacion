@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-import { Link, useHistory } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   const open = () => {
     var nav = document.querySelector("#hamburger button");
@@ -17,20 +16,40 @@ function Navbar() {
     bottom.classList.toggle("open_span");
     text.classList.toggle("open_text");
   };
-  return (
-    <div className="wrapper">
-      <p className="text_p">mater</p>
-      <div id="hamburger">
-        <Link to="/menu">
-          <button onClick={open}>
-            <span className="top-line"></span>
-            <span className="middle-line"></span>
-            <span className="bottom-line"></span>
-          </button>
-        </Link>
+  if (window.location.href.includes("menu")) {
+    return (
+      <div className="wrapper">
+        <p className="text_p open_text">mater</p>
+
+        <div id="hamburger">
+        <Link to="/home">
+            <button className="open">
+              <span className="top-line open_span"></span>
+              <span className="middle-line open_span"></span>
+              <span className="bottom-line open_span"></span>
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  if (window.location.href.includes("home")) {
+    return (
+      <div className="wrapper">
+        <p className="text_p">mater</p>
+
+        <div id="hamburger">
+          <Link to="/menu">
+            <button>
+              <span className="top-line"></span>
+              <span className="middle-line"></span>
+              <span className="bottom-line"></span>
+            </button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Navbar;
