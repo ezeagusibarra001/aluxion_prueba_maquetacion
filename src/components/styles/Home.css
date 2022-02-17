@@ -4,10 +4,15 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(70px, auto);
-  animation-duration: 3.5s;
-  animation-fill-mode: forwards;
-  animation-name: producto;
+  grid-auto-rows: minmax(auto, auto);
+}
+.overflow {
+  overflow: auto;
+  max-height: 55vh;
+  margin-top: 6vh;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .box_left {
   grid-column: 2/6;
@@ -46,12 +51,4 @@
 .imagen {
   width: 400px;
 }
-@keyframes producto {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}

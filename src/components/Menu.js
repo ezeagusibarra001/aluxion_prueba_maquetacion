@@ -13,10 +13,12 @@ function Menu() {
   };
 
   const enterSillon = () => {
-    document.querySelector("#sillon").classList.add("block");
+    document.querySelector("#sillon").classList.add("sillonopen");
+    document.querySelector("#sillon").classList.remove("sillonclose");
   };
   const leaveSillon = () => {
-    document.querySelector("#sillon").classList.remove("block");
+    document.querySelector("#sillon").classList.remove("sillonopen");
+    document.querySelector("#sillon").classList.add("sillonclose");
   };
   return (
     <Layout>

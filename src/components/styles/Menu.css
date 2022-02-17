@@ -10,8 +10,19 @@
 .sillon {
   grid-column: 7/11;
   grid-row: 2;
-  display: none;
+  opacity: 0;
 }
+.sillonopen {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: sillon_animation;
+}
+.sillonclose {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: sillon_animation2;
+}
+
 .sillon img {
   width: 400px;
 }
@@ -24,6 +35,7 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
   font-size: 27px;
+  width: fit-content;
 }
 .lista li {
   margin-bottom: 50px;
@@ -96,5 +108,21 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes sillon_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sillon_animation2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
