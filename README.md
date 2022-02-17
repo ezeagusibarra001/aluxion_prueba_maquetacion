@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Prueba técnica: UI Developer #
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La prueba consiste en realizar dos interfaces de una página de muebles con las interacciones correspondientes de cada una.
 
-## Available Scripts
+El ejemplo visual de la interacción a conseguir con los distintos elementos del ejercicio queda reflejado en el video adjunto a la prueba en la carpeta de "Recursos". Todos los elementos necesarios para poder llevar el ejercicio a cabo de manera correcta se pueden encontrar en este folder.
 
-In the project directory, you can run:
 
-### `npm start`
+### Interfaces ###
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La primera interfaz a plantear sera un fondo blanco donde se ve un slider de muebles que cambia al hacer scroll o clickar en los items que se encuentran debajo del slider (slider dots).
 
-### `npm test`
+La segunda interfaz es la del menú y aparece cuando se hace click en el icono del menu. Apareciendo así el navegador de la web, el cual también dispondrá de un par de interacciones.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para poder hacer las interacciones y animaciones podrás apoyarte en librerias de ReactJS para animaciones como: SpringJS, GSAP, AnimeJS (instalandolas mediante npm). Aunque también se pueden hacer por CSS (elegir preferencia según gustos personales).
 
-### `npm run build`
+ 
+### Requisitos técnicos minimos ###
+- A la hora de realizar el desarrollo del ejercicio, utilizar HTML, CSS y Javascript Vanilla.
+- No está permitido el uso de ninguna libreria de CSS adicional. 
+- Hacer que sea Responsive Web Design (Desktop, tablet, mobile). Dado que no hay un diseño definido para cada posible resolución y dimensión de pantalla, parte del ejercicio está en plantear una estructura web que luego pueda adaptarse a las distintas dimensiones de pantalla (Responsive Web Design).
+- La aplicación web debe visualizarse correctamente en las últimas versiones de los principales navegadores web: Google Chrome, Firefox, Opera (Cross-Browser Compatible Website).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Requisitos técnicos BONUS ###
+- Aplicar los estilos con styled components.
+- Correcta visualización en Safari, Microsoft Edge e Interet Explorer 11.
+- Que el slider se ejecute mediante scroll vertical (animación del slider con efecto parallax).
+- Precisión a la hora de maquetar y siular
+ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Algunos consejos ###
+- Buen rendimiento y optimización de la web, de cara al performance y tiempos de carga.
+- La maquetación debe ser precisa, nos gusta cuidar los detalles, por lo que es importante que sea lo más semejante posible al diseño proporcionado.
+- Código limpio y bien organizado. Somos de los que disfrutan el código eficiente, con sus pertienentes espacios, saltos de línea y bonitas indentaciones.
+- Intentar conseguir hacer cuantas más animaciones y transiciones de las que aparecen en el vídeo.
 
-### `npm run eject`
+### Entrega ###
+- A la hora de entregar el ejercicio, todo el código debe quedar subido a un repositorio.
+- La entrega final se debe notificar al correo ielorduy@aluxion.com y aroca@aluxion.com, confirmando la finalización y correcta entrega de la misma.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Cómo instalar el ejercicio ###
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- GIT
+  - Instalar git
+  - Clonar el repositorio en local
+  - Ir subiendo el código que se va desarrollando con commits descriptivos
+  - comandos:
+    - $ git add .
+    - $ git commit -m "wombat"
+    - $ git push
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- NODE
+  - Instalar Node.js
+  - Desde la terminal en la carpeta del proyecto:
+    - Instalar dependencias:
+      - $ npm i
+      - $ npm start
