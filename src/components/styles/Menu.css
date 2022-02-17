@@ -38,6 +38,9 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: bellow_list;
 }
 .bellow_list li {
   margin: 0;
@@ -86,4 +89,12 @@
   padding: 10px 20px;
   width: 50px;
   cursor: pointer;
+}
+@keyframes bellow_list {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

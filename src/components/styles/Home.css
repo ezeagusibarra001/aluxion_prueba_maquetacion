@@ -5,14 +5,17 @@
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(70px, auto);
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+  animation-name: producto;
 }
 .box_left {
   grid-column: 2/6;
   grid-row: 2;
   font-family: "Roboto", sans-serif;
 }
-.box_right{
-    grid-column: 8/11;
+.box_right {
+  grid-column: 8/11;
   grid-row: 2;
   font-family: "Roboto", sans-serif;
 }
@@ -40,6 +43,15 @@
   padding: 10px 16px;
   cursor: pointer;
 }
-.imagen{
-    width: 400px;
+.imagen {
+  width: 400px;
+}
+@keyframes producto {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
