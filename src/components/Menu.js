@@ -15,19 +15,36 @@ function Menu() {
   const enterSillon = () => {
     document.querySelector("#sillon").classList.add("sillonopen");
     document.querySelector("#sillon").classList.remove("sillonclose");
+    document.querySelector(".extras1").classList.add("noneVis")
+    document.querySelector(".extras2").classList.add("noneVis")
+    document.querySelector(".extras3").classList.add("noneVis")
+    document.querySelector(".extras1").classList.remove("noneVisOut")
+    document.querySelector(".extras2").classList.remove("noneVisOut")
+    document.querySelector(".extras3").classList.remove("noneVisOut")
   };
   const leaveSillon = () => {
     document.querySelector("#sillon").classList.remove("sillonopen");
     document.querySelector("#sillon").classList.add("sillonclose");
+    document.querySelector(".extras1").classList.remove("noneVis")
+    document.querySelector(".extras2").classList.remove("noneVis")
+    document.querySelector(".extras3").classList.remove("noneVis")
+    document.querySelector(".extras1").classList.add("noneVisOut")
+    document.querySelector(".extras2").classList.add("noneVisOut")
+    document.querySelector(".extras3").classList.add("noneVisOut")
+
   };
   return (
     <Layout>
       <div className="grilla_menu">
         <ul className="lista">
-          <div onMouseEnter={enter} onMouseLeave={leave}>
+          <div onMouseEnter={enter} onMouseLeave={leave} onClick={enter}>
             <li id="collection">Collection</li>
             <ul className="bellow_list">
-              <li onMouseEnter={enterSillon} onMouseLeave={leaveSillon}>
+              <li
+                onMouseEnter={enterSillon}
+                onMouseLeave={leaveSillon}
+                onClick={enterSillon}
+              >
                 Furniture
               </li>
               <li>Lighting</li>
@@ -35,9 +52,9 @@ function Menu() {
             </ul>
           </div>
 
-          <li>Design</li>
-          <li>Craftmanship</li>
-          <li>Ethics</li>
+          <li className="extras1">Design</li>
+          <li className="extras2">Craftmanship</li>
+          <li className="extras3">Ethics</li>
         </ul>
         <div id="sillon" className="sillon">
           <img src={sillon} alt="Sillon" />
@@ -48,7 +65,7 @@ function Menu() {
           <div className="group1">
             <p>About</p> <p>Contact</p> <p>Dealers</p>
           </div>
-          <div className="group2"> 
+          <div className="group2">
             <p>News</p> <p>Care</p> <p>Press</p>
           </div>
         </div>

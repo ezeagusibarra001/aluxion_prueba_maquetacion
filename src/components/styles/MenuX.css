@@ -38,3 +38,43 @@
   border-top: 2px solid black;
   cursor: pointer;
 }
+/*RESPONSIVE*/
+/*COMPUTADORA MEDIANA*/
+/*1366×768*//*
+@media (min-width: 1366px) {
+
+}*/
+/*MOVIL GRANDE*/
+/*720x1280*/
+@media (min-width: 720px) and (max-width: 1366px) {
+  .footer{
+    grid-column: 2;
+  }
+  .uno{
+    width: 300px;
+  }
+  .number{
+    font-size: 25px;
+
+  }
+  .text_title{
+    font-size: 25px;
+  }
+}
+/*MOVIL PEQUEÑO*/
+/*360×640*/
+@media (min-width: 360px) and (max-width: 719px){
+  .footer{
+    grid-column: 2;
+  }
+  .uno{
+    width: 125px;
+  }
+  .number{
+    font-size: 15px;
+
+  }
+  .text_title{
+    font-size: 15px;
+  }
+}

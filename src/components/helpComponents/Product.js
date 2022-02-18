@@ -3,22 +3,6 @@ import { useHome } from "../../context/useContext";
 import "../styles/Home.css";
 function Product() {
   const { productos } = useHome();
-  var interval = setInterval(function () {
-    if (document.getElementById(2)) {
-      clearInterval(interval)
-      const p1 = document.getElementById(2);
-      const cargarP = () => {
-        console.log("Ejecuta");
-      };
-      const observador = new IntersectionObserver(cargarP, {
-        root: null,
-        rootMargin: "0px",
-        threshold: "1.0",
-      });
-      observador.observe(p1);
-    }
-  });
-
   return (
     <div className="overflow">
       {productos

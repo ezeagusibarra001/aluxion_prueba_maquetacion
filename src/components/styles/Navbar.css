@@ -125,3 +125,22 @@
     transform: translateY(0px) rotate(0deg);
   }
 }
+/*RESPONSIVE*/
+/*COMPUTADORA MEDIANA*/
+/*1366×768*//*
+@media (min-width: 1366px) {
+
+}*/
+/*MOVIL GRANDE*/
+/*720x1280*/
+@media (min-width: 720px) and (max-width: 1366px) {
+.text_p{
+  margin: 0;
+  font-size: 33px;
+}
+}
+/*MOVIL PEQUEÑO*/
+/*360×640*//*
+@media (min-width: 360px) and (max-width: 719px){
+
+}*/

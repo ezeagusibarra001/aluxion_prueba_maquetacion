@@ -11,6 +11,8 @@
   grid-column: 7/11;
   grid-row: 2;
   opacity: 0;
+  z-index: -1;
+  margin-top: 12vh;
 }
 .sillonopen {
   animation-duration: 2s;
@@ -24,7 +26,7 @@
 }
 
 .sillon img {
-  width: 400px;
+  width: 600px;
 }
 .lista {
   grid-column: 2/6;
@@ -36,6 +38,9 @@
   font-family: "Roboto", sans-serif;
   font-size: 27px;
   width: fit-content;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-name: lista;
 }
 .lista li {
   margin-bottom: 50px;
@@ -102,6 +107,16 @@
   width: 50px;
   cursor: pointer;
 }
+.noneVis {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: noneVis;
+}
+.noneVisOut {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: noneVisOut;
+}
 @keyframes bellow_list {
   0% {
     opacity: 0;
@@ -124,5 +139,96 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes lista {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes noneVis {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes noneVisOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*RESPONSIVE*/
+/*1366×768*/
+@media (min-width: 1920px) {
+  .sillon img {
+    width: 35vw;
+  }
+  .lista {
+    font-size: 30px;
+  }
+  .bellow_list {
+    font-size: 22px;
+  }
+}
+/*COMPUTADORA MEDIANA*/
+
+/*1366×768*/
+@media (min-width: 1366px) and (max-width:1919px){
+  .sillon img {
+    width: 400px;
+  }
+}
+/*MOVIL GRANDE*/
+/*720x1080*/
+@media (min-width: 720px) and (max-width: 1366px) {
+  .sillon {
+    grid-column: 2/11;
+    grid-row: 2;
+    margin-top: 25vh;
+  }
+  .sillon img {
+    width: 500px;
+  }
+  .lista {
+    font-size: 55px;
+  }
+  .bellow_list {
+    font-size: 45px;
+  }
+  .grilla_menu2 {
+    font-size: 32px;
+
+  }
+  .group1 p {
+    margin: 0;
+    padding: 10px 20px;
+    width: 110px;
+    cursor: pointer;
+  }
+  .group2 p {
+    margin: 0;
+    padding: 10px 20px;
+    width: 110px;
+    cursor: pointer;
+  }
+}
+/*MOVIL PEQUEÑO*/
+/*360×640*/
+@media (min-width: 360px) and (max-width: 719px) {
+  .sillon {
+    grid-column: 2/11;
+    margin-top: 12vh;
+  }
+  .sillon img {
+    width: 300px;
   }
 }

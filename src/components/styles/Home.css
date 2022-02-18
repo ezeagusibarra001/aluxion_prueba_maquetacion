@@ -49,6 +49,106 @@
   cursor: pointer;
 }
 .imagen {
-  width: 400px;
+  height: 50vh;
 }
 
+/*RESPONSIVE*/
+/*COMPUTADORA MEDIANA*/
+/*1366×768*/
+@media (min-width: 1366px) {
+  .overflow {
+    max-height: 50vh;
+    margin-top: 12vh;
+  }
+}
+/*MOVIL GRANDE*/
+/*720x1080*/
+@media (min-width: 720px) and (max-width: 1366px) {
+  .overflow {
+    max-height: 63vh;
+    margin-top: 6vh;
+  }
+  .box_left {
+    grid-column: 2/11;
+    grid-row: 2;
+    font-family: "Roboto", sans-serif;
+  }
+  .box_right {
+    grid-column: 2/11;
+    grid-row: 3;
+    font-family: "Roboto", sans-serif;
+  }
+  .imagen {
+    height: 33vh;
+  }
+  .p_text {
+    color: gray;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .h2_text {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+  }
+  .p_description {
+    color: gray;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .button_detail {
+    border: 0;
+    background-color: black;
+    color: white;
+    height: 80px;
+    font-weight: bold;
+    padding: 20px 32px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+}
+/*MOVIL PEQUEÑO*/
+/*360×640*/
+@media (min-width: 360px) and (max-width: 719px){
+  .overflow {
+    max-height: 65vh;
+    margin-top: 0vh;
+  }
+  .box_left {
+    grid-column: 2/11;
+    grid-row: 2;
+    font-family: "Roboto", sans-serif;
+  }
+  .box_right {
+    grid-column: 2/11;
+    grid-row: 3;
+    font-family: "Roboto", sans-serif;
+  }
+  .imagen {
+    height: 30vh;
+  }
+  .p_text {
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .h2_text {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }
+  .p_description {
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .button_detail {
+    border: 0;
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+}

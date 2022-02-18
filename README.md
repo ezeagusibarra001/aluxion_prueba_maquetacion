@@ -1,3 +1,9 @@
+# ANOTACIONES
+El web responsive design fue hecho basado en estos 4 dispositivos:
+-1920 x 1080 (Ordenador Grande)
+-1366 x 768 (Notebook Mediana)
+-720 x 1280 (Movil Grande)
+-360 x 640 (Movil Pequeño)
 # Prueba técnica: UI Developer #
 
 La prueba consiste en realizar dos interfaces de una página de muebles con las interacciones correspondientes de cada una.
